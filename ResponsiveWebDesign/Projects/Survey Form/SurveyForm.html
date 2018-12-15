@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	html, body {
+		background-color: #696969;
+		text-align: center;
+		font-family: Garamond, Book Antiqua;
+		min-width: 300px;
+	}
+	#title {
+		color: white;
+	}
+	#description {
+		font-size: 22px;
+	}
+	#outer-div {
+		background-color: #D3D3D3;
+		margin: 0 auto;
+		width: 80%;
+		max-width: 800px;
+		padding: 10px;
+	}
+	#name-label, #email-label, #number-label, #dropdown-label, #radio-label, #checkboxes-label, #textarea-label {
+		display: inline-block;
+		width: 30%;
+		text-align: right;
+		margin-top: 20px;
+		vertical-align: top;
+	}
+
+	#name, #email, #number, #dropdown, #radios, #checkboxes, #txt {
+		display: inline-block;
+		width: 40%;
+		text-align: left;
+		margin-top: 20px;
+	}
+	#submit {
+		display: block;
+		width: 15%;
+		margin: auto;
+	}
+</style>
+</head>
+<body>
+	<h1 id="title">Space Tourist Survey</h1>
+	<div id="outer-div">
+		<p id="description">We can help you choose your next destination!</p>
+		<form id="survey-form">
+			<label id="name-label">Your name: </label>
+			<input id="name" type="text" placeholder="ex. John Smith" required>
+			<label id="email-label">Your email: </label>
+			<input id="email" type="email" placeholder="ex. me@email.com" required>
+			<label id="number-label">Your age (18-99): </label>
+			<input id="number" type="number" min="18" max="99" placeholder="ex. 50">
+			<label id="dropdown-label">Place of Birth?</label>
+			<select id="dropdown">
+				<option value="">--Please choose an option--</option>
+				<option value="earth">Earth</option>
+				<option value="moon">Moon</option>
+				<option value="mars">Mars</option>
+			</select>
+			<label id="radio-label">What si your origin?</label>
+			<div id="radios">
+				<div>
+					<input type="radio" id="human" name="group1" value="human" checked>
+					<label for="human">Human</label>
+				</div>
+				<div>
+					<input type="radio" id="clone" name="group1" value="clone">
+					<label for="clone">Clone</label>
+				</div>
+				<div>
+					<input type="radio" id="hybrid" name="group1" value="hybrid">
+					<label for="hybrid">Hybrid</label>
+				</div>
+			</div> <!-- end of radios div -->	
+			<label id="checkboxes-label">Recently visited destination(s)?</label>
+			<div id="checkboxes">
+				<div>
+					<input type="checkbox" id="titan" name="titan" value="titan">
+					<label for="titan">Titan</label>
+				</div>
+				<div>
+					<input type="checkbox" id="pluto" name="pluto" value="pluto">
+					<label for="pluto">Pluto</label>
+				</div>		
+				<div>
+					<input type="checkbox" id="io" name="io" value="io">
+					<label for="io">Io</label>
+				</div>
+			</div> <!-- end of checkboxes div -->
+			<label id="textarea-label">Do you have special requests?</label>
+			<textarea id="txt" name="txt" rows="5" cols="20">
+				Write your comments here ...
+			</textarea>
+			<input id="submit" type="submit" value="Send Info">
+		</form>
+	</div>	
+</body>
+</html>
