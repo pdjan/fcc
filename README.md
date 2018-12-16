@@ -12,7 +12,7 @@ kraj :: ?
 
 JavaScript Algorithms and Data Structures
 -----------------------------------------
-start :: ?
+start :: 15. Decembar 2018.
 
 kraj :: ?
 
