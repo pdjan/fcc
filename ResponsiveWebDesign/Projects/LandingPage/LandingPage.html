@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	@import 'https://fonts.googleapis.com/css?family=Patua+One';
+	
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body {
+		background-color: #eee;
+		font-family: 'Patua One', cursive, sans-serif, Ariel;
+	}
+	#page-wrapper {
+		max-width: 1000px;
+		margin: auto;
+		
+	}
+	#header-img {
+		max-width: 25%;
+		display: block;
+		margin-left: 50px;
+		margin-right: auto;
+	}		
+	#header {
+		position: fixed;
+		top: 0;
+		min-height: 75px;
+		padding: 0px 20px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		background-color: #eee;
+		@media (max-width: 600px) {
+			flex-wrap: wrap;
+		}
+	}
+	li {
+		list-style: none;
+		float: left;
+		min-width: 100px;
+	}
+	li a {
+	  display: block;
+	  color: black;
+	  text-align: center;
+	  padding: 16px;
+	  text-decoration: none;
+	}	
+	.logo {
+	  width: 50vw;
+	    
+	  img {
+		width: 100%;
+		height: 100%;
+		max-width: 300px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		@media (max-width: 650px) {
+		  margin: 0 auto;
+		}
+	  }
+	}	
+	.box {
+		display: block;
+		clear: both;
+		margin: 0 200px 30px 200px;
+	}
+	p {
+		font-size: 15px;
+	}
+	div.box p {
+		padding-top: 20px;
+		text-align: justify;
+	}
+	nav {
+		font-weight: 400;
+		 
+		ul {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+		  background-color: #333333;
+		}
+	}
+	.container {
+		max-width: 1000px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	h2 {
+		margin-top: 100px;
+		display: flex;
+		justify-content: center;
+	}
+	#subscribe_form {
+	  margin-top: 30px;
+	  display: flex;
+	  justify-content: center;
+	}
+	form {
+	  text-align: center;  	  
+	}
+	input[type=email] {
+		display: block;
+		padding: 4px 20px;
+	}
+	input[type=submit] {
+      max-width: 150px;
+      width: 100%;
+      height: 30px;
+      margin: 15px auto;
+      border: 0;
+	  background-color: orange;
+	  text-align: center;
+	  font-size: 15px;
+	}
+	#details {
+	  padding-top: 100px;
+	}	
+	
+	#prices {
+	  width: 100%;
+	  height: 480px;
+	  display: flex;
+	  flex-direction: row;
+	  flex-wrap: nowrap;
+	  justify-content: center;
+	  margin-top: 200px;
+	}		
+	.pricesbox {
+	  margin: 30px 10px; 
+	  border: 2px solid orange;
+	  width: 33%;
+	  text-align: center;
+	}
+	div.pricesbox p {
+	  text-align: justify;
+	  padding: 20px;
+	}
+	h3 {
+	  padding-top: 20px;
+	}
+    .level {
+	  height: 55px;
+	  padding-top: 20px;
+      background-color: #ddd;
+      color: black;
+      text-transform: uppercase;
+    }	
+	
+	#manufacturing {
+	  padding-top: 100px;
+	  margin-top: 100px;
+	  display: flex;
+	  justify-content: center;
+	  
+	  iframe {
+		max-width: 560px;
+		width: 100%;
+	  }
+	}
+	@media only screen and (max-width: 500px) {
+		body {
+			background-color: lightblue;
+		}
+	}
+	.btn {
+      width: 100px;
+      height: 30px;
+	  border: 0;
+	  background-color: orange;
+	  text-align: center;
+	  font-size: 15px;
+	}
+</style>
+</head>
+<body>
+	<div id="page-wrapper">
+		<header id="header">
+			<div class="logo">
+				<img id="header-img" src="https://raw.githubusercontent.com/pdjan/fcc/master/ResponsiveWebDesign/Projects/LandingPage/voyage22.png"/> <!-- company logo -->
+			</div>
+			<nav id="nav-bar"> <!-- always on top of viewport -->
+				<ul>
+					
+					<li><a class="nav-link" href="#details">Details</a></li> <!-- go to section 1 of the page -->
+					<li><a class="nav-link" href="#manufacturing">Showcase</a></li> <!-- go to section 2 of the page -->
+					<li><a class="nav-link" href="#prices">Prices</a></li> <!-- go to section 3 of the page -->
+				</ul>
+			</nav>
+		</header>
+
+		<div id="container">
+			<h2>Imagine your future</h2>
+			<section id="subscribe_form">
+				<form action="https://www.freecodecamp.com/email-submit" id="form">
+					<input type="email" id="email" name="email" placeholder="enter email">
+					<input type="submit" id="submit" value="Submit">
+				</form>
+			</section>
+			<section id="details">
+				<div class="box">
+					<h3>New world experience</h3>
+					<p>Earth is not enough. Experience New World and explore space like never before. Visit outer colonies and take a bite of different life. Enjoy the benefits of exomedicine you can not have on Earth. Meet new life forms in their natural habitat.</p>
+				</div>
+			</section>
+			<section id="manufacturing">
+					<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Bouplz--hOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</section>
+			<section id="prices">
+				  <div class="pricesbox">
+					  <div class="level">
+						Trip to IO
+					  </div>
+					  <h3>25 A* Units</h3>
+					  <p>Ignorant branched humanity led now marianne too strongly entrance. Rose to shew bore no ye of paid rent form. Old design are dinner better nearer silent excuse. She which are maids boy sense her shade. Considered reasonable we affronting on expression in. So cordial anxious mr delight. Shot his has must wish from sell nay. Remark fat set why are sudden depend change entire wanted. Performed remainder attending led fat residence far.</p>
+					  <button class="btn">Select</button>
+				  </div>
+				  <div class="pricesbox">
+					  <div class="level">
+						Visit Titan
+					  </div>
+					  <h3>30 A* Units</h3>
+					  <p>Ignorant branched humanity led now marianne too strongly entrance. Rose to shew bore no ye of paid rent form. Old design are dinner better nearer silent excuse. She which are maids boy sense her shade. Considered reasonable we affronting on expression in. So cordial anxious mr delight. Shot his has must wish from sell nay. Remark fat set why are sudden depend change entire wanted. Performed remainder attending led fat residence far.</p>					  
+					  <button class="btn">Select</button>
+				  </div>
+				  <div class="pricesbox">
+					  <div class="level">
+						Explore Alpha Centauri
+					  </div>
+					  <h3>500 A* Units</h3>
+					  <p>Ignorant branched humanity led now marianne too strongly entrance. Rose to shew bore no ye of paid rent form. Old design are dinner better nearer silent excuse. She which are maids boy sense her shade. Considered reasonable we affronting on expression in. So cordial anxious mr delight. Shot his has must wish from sell nay. Remark fat set why are sudden depend change entire wanted. Performed remainder attending led fat residence far.</p>					  
+					  <button class="btn">Select</button>
+				  </div>
+			</section>	
+			<footer>
+				<ul>
+					<li><a href="#">Privacy</a></li>
+					<li><a href="#">Terms</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</footer>
+		</div> <!-- end div container-->
+	</div> <!-- end page-wraper-->
+</body>
+</html>
