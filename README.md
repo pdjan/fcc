@@ -7,7 +7,7 @@ Responsive Web Design
 ---------------------
 start :: 26. Novembar 2018.
 
-kraj :: ?
+kraj :: 8. Februar 2019.
 
 
 JavaScript Algorithms and Data Structures
