@@ -14,7 +14,7 @@ JavaScript Algorithms and Data Structures
 -----------------------------------------
 start :: 15. Decembar 2018.
 
-kraj :: ?
+kraj :: 20. Februar 2019.
 
 
 Front End Libraries
