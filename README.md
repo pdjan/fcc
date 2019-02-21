@@ -19,6 +19,6 @@ kraj :: 20. Februar 2019.
 
 Front End Libraries
 -------------------
-start :: ?
+start :: 21. Februar 2019.
 
 kraj :: ?
