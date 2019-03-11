@@ -1,7 +1,11 @@
 ### Front End Libraries 
 
-#### Bootstrap
-#### jQuery
-#### Sass
-#### React
-#### Redux
+Bootstrap
+
+jQuery
+
+Sass
+
+React
+
+Redux
