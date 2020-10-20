@@ -22,3 +22,10 @@ Front End Libraries
 start :: 21. Februar 2019.
 
 kraj :: ?
+
+
+Scientific Computing with Python
+--------------------------------
+start :: 19. Oktobar 2020.
+
+kraj :: ?
