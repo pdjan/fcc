@@ -29,3 +29,10 @@ Scientific Computing with Python
 start :: 19. Oktobar 2020.
 
 kraj :: 22. Oktobar 2020.
+
+
+Data Analysis with Python
+-------------------------
+start :: 22. Oktobar 2020.
+
+kraj :: ?
