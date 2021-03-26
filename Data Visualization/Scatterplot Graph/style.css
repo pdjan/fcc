@@ -1,0 +1,38 @@
+.graph {
+  display: block;
+  margin: auto;
+  background-color: azure;
+}
+
+body {
+  font: 10px sans-serif;
+  width: 100%;
+  height: 100%;
+  background-color: aliceblue;
+}
+.main {
+  position: relative;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  stroke: #fff;
+  opacity: 0.8;
+}
+
+div.tooltip {
+  position: absolute;
+
+  padding: 10px;
+  font: 12px sans-serif;
+  background: darkkhaki;
+  border: 0px;
+  border-radius: 15px;
+  pointer-events: none;
+}
