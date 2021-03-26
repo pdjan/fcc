@@ -39,7 +39,7 @@ kraj :: ?
 
 
 ## Data Visualization with D3
---------------------------
+-------------------------
 start :: 16. Mart 2021.
 
 kraj :: ?
